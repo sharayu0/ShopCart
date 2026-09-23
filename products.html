@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopCart - Products</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/product-card.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <div id="header"></div>
+
+    <main>
+
+        <!-- PAGE HEADER -->
+         <section class="products-page-header">
+            <div class="products-header-content">
+
+                <p class="section-eyebrow"> ShopCart Collection </p>
+                
+                <h1> All Products </h1>
+
+                <p class="products-page-description">
+                    Explore our collection of products and find something you'll love.
+                </p>
+
+            </div>
+         </section>
+
+         <!-- PRODUCTS -->
+          <section class="products-section">
+            <div class="products-layout">
+
+                <!-- CATEGORY SIDEBAR -->
+                <aside class="products-sidebar">
+                    <div class="filter-header">
+
+                        <h2> Categories </h2>
+                        <button id="clear-filters" class="clear-filter-btn" type="button">Clear</button>
+
+                    </div>
+
+                    <div id="category-filters" class="category-filters">
+                        <!-- Categories will be added by JavaScript -->
+                    </div>
+                </aside>
+
+                <!-- PRODUCTS CONTENT -->
+                <div class="products-content">
+
+                    <!-- TOOLBAR -->
+                    <div class="products-toolbar">
+
+                        <p id="products-count">Loading products...</p>
+
+                        <div class="sort-wrapper">
+
+                            <label for="sort-products"> Sort by: </label>
+                            <select id="sort-products">
+
+                                <option value="default"> Featured </option>
+                                <option value="title-asc"> Name: A to Z </option>
+                                <option value="title-desc"> Name: Z to A </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRODUCT GRID -->
+                    <div id="products-grid" class="products-grid">
+                        <!-- Product cards will be added by JavaScript -->
+                    </div>
+
+                    <!-- LOADING -->
+                    <div id="products-loading" class="products-loading">
+                        Loading products...
+                    </div>
+
+                    <!-- EMPTY STATE -->
+                    <div id="products-empty" class="products-empty" hidden>
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                        <h2> No products found </h2>
+
+                        <p>
+                            Try selecting another category.
+                        </p>
+
+                    </div>
+
+                    <!-- PAGINATION -->
+                    <div id="products-pagination" class="products-pagination">
+                        <!-- Pagination buttons will be added by JavaScript -->
+                    </div>
+
+                </div>
+
+            </div>
+          </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+    <script src="./js/components/header.js"></script>
+    <script type="module" src="./js/pages/productsPage.js"></script>
+    <script src="js/components/footer.js"></script>
+
+</body>
+
+</html>

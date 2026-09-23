@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Shop By Department",
+        "items" : [
+            {
+                "title" : "Mobile",
+                "submenu" : [
+                    "Samsung",
+                    "iPhone",
+                    "OnePlus",
+                    "Realme"
+                ]
+            },
+            {
+                "title" : "Electronics",
+                "submenu" : [
+                    "Laptop",
+                    "Camera",
+                    "HeadPhones",
+                    "Speakers"
+                ]
+            },
+            {
+                "title" : "Computers",
+                "submenu" : [
+                    "Monitor",
+                    "Mouse",
+                    "Keyboard",
+                    "CPU"
+                ]
+            },
+            {
+                "title" : "Fashion",
+                "submenu" : [
+                    "Men",
+                    "Women",
+                    "Kids"
+                ]
+            },
+            {
+                "title" : "Smart Home",
+                "submenu" : [
+                    "Cleaning Tools",
+                    "Home Storage",
+                    "Home Decor",
+                    "Bedding"
+                ]
+            }
+        ]
+    },
+    {
+        "title" : "Programs & Features",
+        "items" : [
+            {
+                "title" : "Gift Cards",
+                "submenu" : [
+                    "Wedding Card",
+                    "Birthday Card",
+                    "Festival Card"
+                ]
+            },
+            {
+                "title" : "Amazon Live",
+                "submenu" : [
+                    "Live",
+                    "Recently Live"
+                ]
+            },
+            {
+                "title" : "International Shopping",
+                "submenu" : [
+                    "Amazon Global Store",
+                    "Where We Ship",
+                    "Visit Amazon Global"
+                ]
+            }
+        ]
+    }
+]

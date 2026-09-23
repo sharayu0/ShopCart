@@ -1,0 +1,85 @@
+<header class="site-header">
+
+    <div class="header-main">
+
+        <div class="header-left">
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <a href="./index.html" class="brand">
+                Shop<span>Cart</span>
+            </a>
+
+            <nav class="desktop-nav">
+                <a href="./products.html">Shop</a>
+                <a href="./products.html?sort=newest">New Arrivals</a>
+                <a href="./products.html?sort=popular">Trending</a>
+                <a href="./products.html?discount=true">Deals</a>
+            </nav>
+        </div>
+
+        <div class="header-actions">
+
+            <a href="login.html" class="account-link">
+                <i class="fa-regular fa-user"></i>
+                <span>Account</span>
+            </a>
+
+            <a href="#" class="wishlist-link" aria-label="Wishlist">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+
+            <a href="../cart.html" class="cart-link" aria-label="Shopping cart">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="search-wrapper">
+
+        <form class="search-form" id="searchForm">
+
+            <input type="search" id="searchInput" placeholder="Search products, brands and more..." autocomplete="off">
+
+            <button type="submit" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </form>
+
+        <div class="search-result" id="searchResult"></div>
+
+    </div>
+
+
+    <!-- Mobile menu -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <div class="mobile-menu-header">
+            <span>ShopCart</span>
+
+            <button id="closeMobileMenu" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="../products.html">Shop</a>
+            <a href="../products.html?sort=newest">New Arrivals</a>
+            <a href="../products.html?sort=popular">Trending</a>
+            <a href="../products.html?discount=true">Deals</a>
+            <a href="../login.html">My Account</a>
+            <a href="../cart.html">Cart</a>
+        </nav>
+
+    </div>
+
+    <div class="header-overlay" id="headerOverlay"></div>
+
+</header>

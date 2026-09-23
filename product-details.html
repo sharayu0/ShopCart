@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details | ShopCart</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/productDetails.css">
+    <link rel="stylesheet" href="./css/footer.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="header"></div>
+    </header>
+
+    <main class="product-page">
+
+        <div id="product-loading">
+            Loading product...
+        </div>
+
+        <div id="product-error" hidden>
+            Unable to load product.
+        </div>
+
+        <section id="product-details" class="product-details" hidden>
+
+            <div class="product-image-section">
+                <img id="product-image" src="" alt="">
+            </div>
+
+            <div class="product-info">
+
+                <h1 id="product-title"></h1>
+
+                <p id="product-description" class="product-description"></p>
+
+                <div id="product-price" class="product-price"></div>
+
+                <div id="product-variants" class="product-variants"></div>
+
+                <div class="product-quantity">
+
+                    <label for="quantity">Quantity</label>
+
+                    <select id="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+
+                <button id="add-to-cart" class="add-to-cart">
+                    Add to Cart
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div id="footer"></div>
+    </footer>
+
+    <script src="./js/components/header.js"></script>
+    <script type="module" src="./js/pages/productDetailsPage.js"></script>
+    <script src="./js/components/footer.js"></script>
+
+</body>
+
+</html>
