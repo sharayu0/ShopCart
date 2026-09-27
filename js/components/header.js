@@ -1,3 +1,5 @@
+import { getCart } from "../api/cart.js";
+
 async function loadHeader() {
 
     const response = await fetch("./components/header.html");
@@ -12,10 +14,34 @@ async function loadHeader() {
 
     initializeMobileMenu();
     initializeSearch();
+    updateCartCount();
 }
 
 loadHeader();
 
+export async function updateCartCount() {
+    const cartCount = document.querySelector("#cartCount");
+    if(!cartCount) {
+        return;
+    }
+    try {
+        const cart = await getCart();
+        if(!cart || !cart.items || cart.items.length === 0) {
+            cartCount.textContent = 0;
+            return;
+        }
+        const totalQuantity = cart.items.reduce((total, item) => {
+           return total + item.quantity;
+        }, 0);
+
+        cartCount.textContent = totalQuantity;
+
+    } catch(error) {
+        console.error("Error loading cart count:", error);
+
+        cartCount.textContent = 0;
+    }
+}
 
 function initializeMobileMenu() {
 

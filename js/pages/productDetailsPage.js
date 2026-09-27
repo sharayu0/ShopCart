@@ -1,4 +1,6 @@
 import { getProductsByHandle } from '../api/products.js';
+import { addToCart } from '../api/cart.js';
+import { updateCartCount } from '../components/header.js';
 
 const urlParams = new URLSearchParams(window.location.search);
 const productHandle = urlParams.get("product");
@@ -12,7 +14,7 @@ const productPrice = document.querySelector("#product-price");
 const productDescription = document.querySelector("#product-description");
 const productVariants = document.querySelector("#product-variants");
 const quantity = document.querySelector("#quantity");
-const addToCart =  document.querySelector(".add-to-cart");
+const addToCartBtn =  document.querySelector(".add-to-cart");
 
 let selectedVariant = null;
 
@@ -27,10 +29,6 @@ async function loadProduct() {
         productError.hidden = true;
 
         const product = await getProductsByHandle(productHandle);
-        console.log(product)
-        console.log(product.options)
-        console.log(product.variants)
-
 
         if(!product) {
             showError("Product not Found");
@@ -97,7 +95,7 @@ function renderVariants(product) {
             button.addEventListener("click", ()=> {
                 const matchingVariant = variants.find(variant => {
                     return variant.options.some(optionValue => {
-                        optionValue.value === value.value;
+                        return optionValue.value === value.value;
                     });
                 });
 
@@ -142,9 +140,22 @@ function showError(message) {
     productError.textContent = message;
 }
 
-addToCart.addEventListener("click", () => {
+addToCartBtn.addEventListener("click", async () => {
     const selectedQuantity = Number(quantity.value);
-    console.log("Add to Cart:", productHandle, selectedQuantity)
+
+    try {
+        const cart = await addToCart(selectedVariant.id ,selectedQuantity);    
+        await updateCartCount();
+        alert("Product added to Cart");
+
+    } catch(error) {
+        console.error(
+            "Error adding product to cart:",
+            error
+        );
+
+        alert("Unable to add product to cart");
+    }
 });
 
 loadProduct()

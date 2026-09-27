@@ -1,10 +1,12 @@
+import { addToCart } from "../api/cart.js";
+import { updateCartCount } from "./header.js";
+
 export function createProductCard(product) {
 
     const image = product.thumbnail || product.images?.[0]?.url || "./assets/images/products/default-product.jpg";
 
     const variant = product.variants?.[0];
     const price = variant?.calculated_price?.calculated_amount;
-    const currency = variant?.calculated_price?.currency_code || "inr";
 
     const card = document.createElement("article");
     card.className = "product-card";
@@ -34,10 +36,7 @@ export function createProductCard(product) {
 
             <div class="product-bottom">
                 <div class="product-price">
-                    ${price !== undefined 
-                        ? `${currency.toUpperCase()} ₹${price.toLocaleString("en-IN")}`
-                        :"Price Unavailable"
-                    }
+                    ${price !== undefined ? `₹${price}` :"Price Unavailable"}
                 </div>
 
                 <button class="add-cart-btn" type="button" data-product-id= "${product.id}">
@@ -48,5 +47,35 @@ export function createProductCard(product) {
 
         </div>
     `;
+
+    const addToCartBtn = card.querySelector('.add-cart-btn');
+
+    addToCartBtn.addEventListener("click", async () => {
+        
+        if(!variant) {
+            alert("Product is unavailable");
+            return;
+        }
+        try {
+            addToCartBtn.disabled = true;
+            addToCartBtn.textContent = "Adding ...";
+
+            await addToCart(variant.id, 1);
+            await updateCartCount();
+
+            alert("Product added to cart");
+        } catch(error) {
+            console.error(
+                "Error adding product to cart:",
+                error
+            );
+
+            alert("Unable to add product to cart");
+        } finally {
+            addToCartBtn.disabled = false;
+            addToCartBtn.textContent = "Add to Cart";
+        }
+    })
+
     return card;
 }
