@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout | ShopCart</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="checkout-page">
+
+        <h1>Checkout</h1>
+
+        <div id="checkout-loading">
+            Loading checkout...
+        </div>
+
+        <div id="checkout-error" hidden></div>
+
+        <section id="checkout-content" class="checkout-content" hidden>
+
+            <div class="checkout-form">
+
+                <!-- Customer Information -->
+                <section class="checkout-section">
+
+                    <h2>
+                        <span>1</span>
+                        Contact Information
+                    </h2>
+
+                    <div class="form-group">
+                        <label for="email">
+                            Email Address
+                        </label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                </section>
+
+                <!-- Shipping Address -->
+                <section class="checkout-section">
+
+                    <h2>
+                        <span>2</span>
+                        Shipping Address
+                    </h2>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="first-name">
+                                First Name
+                            </label>
+                            <input type="text" id="first-name" required>
+                        </div>
+
+                        <div class="form-group"> 
+                            <label for="last-name">
+                                Last Name
+                            </label>
+                            <input type="text" id="last-name" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="text" id="address" placeholder="House / Street / Area" required>
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <input type="text" id="city" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="state">State</label>
+                            <input type="text" id="state" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="postal-code">Postal Code</label>
+                            <input type="text" id="postal-code" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="in">
+                                India
+                            </option>
+                        </select>
+
+                    </div>
+
+                </section>
+
+                <!-- Shipping Method -->
+                <section class="checkout-section">
+
+                    <h2>
+                        <span>3</span>
+                        Shipping Method
+                    </h2>
+
+                    <div id="shipping-options">
+                        Loading shipping options...
+                    </div>
+
+                </section>
+
+                <!-- Payment -->
+                <section class="checkout-section">
+
+                    <h2>
+                        <span>4</span>
+                        Payment
+                    </h2>
+
+                    <div id="payment-options">
+                        Loading payment methods...
+                    </div>
+
+                </section>
+
+                <button id="place-order" class="place-order-btn">
+                    Place Order
+                </button>
+
+            </div>
+
+            <!-- Order Summary -->
+            <aside id="checkout-summary" class="checkout-summary">
+                <!-- Generated by JS -->
+            </aside>
+
+        </section>
+ 
+    </main>
+
+    <div id="footer"></div>
+
+    <script type="module" src="./js/components/header.js"></script>
+    <script type="module" src="./js/pages/checkoutPage.js"></script>
+    <script src="./js/components/footer.js"></script>
+
+</body>
+
+</html>

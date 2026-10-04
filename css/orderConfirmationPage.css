@@ -1,0 +1,138 @@
+.order-confirmation-page {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+#order-loading {
+    padding: 40px;
+    font-size: 18px;
+}
+#order-error {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #28a745;
+    color: white;
+    font-size: 32px;
+}
+.order-confirmation-page h1 {
+    margin-bottom: 10px;
+}
+.success-message {
+    color: #666;
+    margin-bottom: 30px;
+}
+.order-id-section {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 30px;
+    padding: 15px 25px;
+    background: #f5f5f5;
+    border-radius: 6px;
+}
+.order-id-section span {
+    font-size: 14px;
+    color: #666;
+}
+.order-id-section strong {
+    font-size: 15px;
+    word-break: break-all;
+}
+#order-details {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    text-align: left;
+}
+.order-items {
+    margin-bottom: 25px;
+}
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+.order-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+.order-item-info {
+    flex: 1;
+}
+.order-item-info h3 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+.order-item-info p {
+    margin: 3px 0;
+    color: #666;
+    font-size: 14px;
+}
+.order-item-price {
+    font-weight: 600;
+}
+.order-summary {
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 8px;
+}
+.order-summary h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+.summary-total {
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    font-size: 18px;
+}
+.continue-shopping {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #111;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+.continue-shopping:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+    .order-confirmation-page {
+        margin: 30px auto;
+        padding: 15px;
+    }
+    .order-item {
+        align-items: flex-start;
+    }
+    .order-item img {
+        width: 60px;
+        height: 60px;
+    }
+    .order-item-price {
+        font-size: 14px;
+    }
+}

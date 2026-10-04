@@ -23,6 +23,7 @@ async function loadCart() {
         cartContainer.innerHTML = "<p> Unable to Load cart </p>"
     }
 }
+loadCart();
 
 function showEmptyCart() {
     cartContainer.innerHTML = `
@@ -117,8 +118,10 @@ function displayCart(cart) {
             <p>
                 Subtotal: ₹${subtotal}
             </p>
-            <button>
-                Proceed to Checkout
+            <button 
+                onclick = "window.location.href='checkout.html'" 
+                id ="checkout-btn">
+                    Proceed to Checkout
             </button>
         </div>
     `;
@@ -133,32 +136,35 @@ function addCartEventListeners() {
     const removeButtons = document.querySelectorAll(".remove-item");
 
     increaseButtons.forEach(button => {
-        button.addEventListener("click", async () => {
+    button.addEventListener("click", async () => {
 
-            const itemId = button.dataset.itemId;
-            const currentQuantity = Number(
-                button.closest('.cart-item-info')
+        const itemId = button.dataset.itemId;
+
+        const currentQuantity = Number(
+            button.closest('.cart-item-info')
                 .querySelector('.quantity-value')
                 .textContent
+        );
+
+        console.log("Item ID:", itemId);
+        console.log("Current quantity:", currentQuantity);
+        console.log("New quantity:", currentQuantity + 1);
+
+        try {
+            const cart = await updateCartItem(
+                itemId,
+                currentQuantity + 1
             );
 
-            try {
-                const cart = await updateCartItem(itemId, currentQuantity + 1);
-                await updateCartCount();
-                displayCart(cart); 
-            }
-            catch (error) {
-                console.error(
-                    "Error increasing quantity:",
-                    error
-                );
+            await updateCartCount();
+            displayCart(cart);
 
-                alert("Unable to update quantity");
-            }
-
-            console.log(currentQuantity)
-        });
+        } catch (error) {
+            console.error("Error increasing quantity:", error);
+            alert("Unable to update quantity");
+        }
     });
+});
 
     decreaseButtons.forEach(button => {
 
@@ -193,7 +199,7 @@ function addCartEventListeners() {
                 await deleteCartItems(itemId);
                 await updateCartCount();
                 const cart = await getCart();
-                
+
                 if(!cart.items || cart.items.length == 0) {
                     showEmptyCart();
                     return;
@@ -213,4 +219,3 @@ function addCartEventListeners() {
 }
 
 
-loadCart();
