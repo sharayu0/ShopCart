@@ -14,12 +14,8 @@ export function createProductCard(product) {
     card.innerHTML = `
         <div class="product-image-wrapper">
             <a href="product-details.html?product=${encodeURIComponent(product.handle)}" class="product-image-link">
-
                 <img src="${image}" alt="${product.title}" class="product-image" loading="lazy">
             </a>
-            <button class="wishlist-btn" type="button" aria-label="Add ${product.title} to wishlist" data-product-id="${product.id}">
-                <i class="fa-regular fa-heart"></i>
-            </button>
         </div>
 
         <div class="product-info">
