@@ -35,7 +35,7 @@ async function loadCheckout() {
             return;
         }
         currentCart = cart;
-console.log(cart)
+
         displaySummary(cart);
         await loadShippingOptions(cart);
         await loadPaymentProviders(cart);
@@ -310,15 +310,12 @@ placeOrderButton.addEventListener("click", async () => {
         
         // 3. CREATE PAYMENT COLLECTION
         const paymentCollection = await createPaymentCollection(currentCart.id);
-        console.log("Payment Collection:", paymentCollection);
-        
+
         // 4. INITIALIZE PAYMENT SESSION
         await initializePaymentSession(paymentCollection.id, selectedPaymentProvider.id);
 
         // Complete Cart
         const result = await completeCart(currentCart.id);
-
-        console.log("complete cart result", result);
 
         // 6. ORDER CREATED
         if(result.type === "order" && result.order) {

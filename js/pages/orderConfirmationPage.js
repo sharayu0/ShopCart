@@ -37,7 +37,7 @@ async function loadOrder() {
 loadOrder();
 
 function renderOrder(order) {
-    console.log(order)
+
     orderIdElement.textContent = order.id;
 
     let itemsHtml ="";
@@ -45,8 +45,7 @@ function renderOrder(order) {
     order.items?.forEach(item => {
         const price = item.unit_price;
         const total = price * item.quantity;
-        console.log(total)
-
+     
         itemsHtml += `
             <div class="order-item">
                 <img src="${item.thumbnail || ""}" alt="${item.product_title || item.title}">

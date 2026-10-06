@@ -51,7 +51,6 @@ export async function addToCart(variantId, quantity) {
             })
         }
     );
-    console.log("Response status:", response.status);
 
     if(!response.ok) {
         const errorData = await response.json();
@@ -234,10 +233,7 @@ export async function createPaymentCollection(cartId) {
 
         const errorData = await response.json();
 
-        console.log(
-            "Medusa payment collection error:",
-            errorData
-        );
+        console.log("Medusa payment collection error:", errorData);
         throw new Error("Unable to create payment collection");
     }
 

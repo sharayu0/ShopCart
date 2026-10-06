@@ -136,35 +136,31 @@ function addCartEventListeners() {
     const removeButtons = document.querySelectorAll(".remove-item");
 
     increaseButtons.forEach(button => {
-    button.addEventListener("click", async () => {
+        button.addEventListener("click", async () => {
 
-        const itemId = button.dataset.itemId;
-
-        const currentQuantity = Number(
-            button.closest('.cart-item-info')
+            const itemId = button.dataset.itemId;
+            const currentQuantity = Number(
+                button.closest('.cart-item-info')
                 .querySelector('.quantity-value')
                 .textContent
-        );
-
-        console.log("Item ID:", itemId);
-        console.log("Current quantity:", currentQuantity);
-        console.log("New quantity:", currentQuantity + 1);
-
-        try {
-            const cart = await updateCartItem(
-                itemId,
-                currentQuantity + 1
             );
 
-            await updateCartCount();
-            displayCart(cart);
+            try {
+                const cart = await updateCartItem(itemId, currentQuantity + 1);
+                await updateCartCount();
+                displayCart(cart); 
+            }
+            catch (error) {
+                console.error(
+                    "Error increasing quantity:",
+                    error
+                );
 
-        } catch (error) {
-            console.error("Error increasing quantity:", error);
-            alert("Unable to update quantity");
-        }
+                alert("Unable to update quantity");
+            }
+
+        });
     });
-});
 
     decreaseButtons.forEach(button => {
 
