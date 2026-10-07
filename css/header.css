@@ -232,7 +232,7 @@ body {
     }
 } 
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .header-main {
         padding: 0 10px;
     }

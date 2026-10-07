@@ -1,5 +1,5 @@
 .site-footer {
-    margin-top: 60px;
+    margin-top: 50px;
     background: #111827;
     color: #ffffff;
 }
@@ -131,6 +131,9 @@
 
 @media (max-width: 480px) {
 
+    .site-footer {
+        margin-top: 30px;
+    }
     .footer-main {
         grid-template-columns: repeat(2, 1fr);
     }

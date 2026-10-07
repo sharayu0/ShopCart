@@ -120,7 +120,7 @@
     opacity: 0.9;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .order-confirmation-page {
         margin: 30px auto;
         padding: 15px;

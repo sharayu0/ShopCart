@@ -20,7 +20,7 @@
 }
 
 .products-section {
-    padding: 50px 24px 60px;
+    padding: 50px 24px 0;
     background: #fff;
 }
 .products-layout {
@@ -186,7 +186,7 @@
         font-size: 14px;
     }
     .products-section {
-        padding: 30px 15px 50px;
+        padding: 30px 15px 0;
     }
     .products-layout {
         display: block;
@@ -218,7 +218,7 @@
         font-size: 13px;
     }
     .products-section {
-        padding: 30px 10px 45px;
+        padding: 30px 10px 0;
     }
     .products-sidebar {
         padding: 15px;
