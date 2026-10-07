@@ -53,10 +53,6 @@ export async function addToCart(variantId, quantity) {
     );
 
     if(!response.ok) {
-        const errorData = await response.json();
-
-        console.log("Medusa error:", errorData);
-
         throw new Error("Unable to add product to Cart");
     }
 
@@ -107,8 +103,6 @@ export async function updateCartItem(lineItemId, quantity) {
     );
 
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa error:", errorData);
         throw new Error("Unable to update Cart item");
     }
 
@@ -133,9 +127,6 @@ export async function deleteCartItems(lineItemId) {
     );
 
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa error:", errorData);
-
         throw new Error("Unable to remove cart item");
     }
 
@@ -153,8 +144,6 @@ export async function updateCart(cartId, cartData) {
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa update cart error:", errorData);
         throw new Error("Unable to update cart");
     }
 
@@ -171,8 +160,6 @@ export async function getShippingOptions(cartId) {
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medussa shipping option error", errorData);
         throw new Error("Unable to load shipping options");
     }
     const data = await response.json();
@@ -191,8 +178,6 @@ export async function addShippingMethods(cartId, optionId) {
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa shipping method error:", errorData);
         throw new Error("Unable to add shipping method");
     }
 
@@ -209,8 +194,6 @@ export async function getPaymentProviders(regionId) {
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa payment provider error:", errorData);
         throw new Error("Unable to load payment providers");
     }
 
@@ -230,10 +213,6 @@ export async function createPaymentCollection(cartId) {
         }
     );
     if(!response.ok) {
-
-        const errorData = await response.json();
-
-        console.log("Medusa payment collection error:", errorData);
         throw new Error("Unable to create payment collection");
     }
 
@@ -254,10 +233,6 @@ export async function initializePaymentSession(paymentCollectionId, providerId) 
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-
-        console.log("Medusa payment session error:", errorData);
-
         throw new Error("Unable to initialize payment");
     }
 
@@ -274,8 +249,6 @@ export async function completeCart(cartId) {
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa complete cart error:", errorData);
         throw new Error("Unable to place order");
     }
     const data = await response.json();
@@ -291,8 +264,6 @@ export async function getOrder(orderId) {
         }
     );
     if(!response.ok) {
-        const errorData = await response.json();
-        console.log("Medusa get order error:", errorData);
         throw new Error("Unable to fetch order");
     }
 

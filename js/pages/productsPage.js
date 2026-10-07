@@ -183,7 +183,7 @@ function loadProductsByCategory(categories) {
                 productsLoading.hidden = true;
 
             }catch(error) {
-                console.log("Error loading category products",error);
+                console.error("Error loading category products", error);
             } finally {
                 productsLoading.hidden = true;
             }
