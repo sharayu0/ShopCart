@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 1,
+        "img": "assets/images/header_img1.jpg",
+        "alt": "Gifts"
+    },
+    {
+        "id" : 2,
+        "img": "assets/images/header_img2.jpg",
+        "alt": "Fashion Sale"
+    },
+    {
+        "id" : 3,
+        "img": "assets/images/header_img3.jpg",
+        "alt": "Kitchen Appliances"
+    },
+    {
+        "id" : 4,
+        "img": "assets/images/header_img4.jpg",
+        "alt": "Gaming Accessories"
+    }
+]

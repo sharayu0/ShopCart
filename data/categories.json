@@ -1,0 +1,45 @@
+
+[
+    {
+        "id": "electronics",
+        "name": "Electronics",
+        "handle": "electronics",
+        "image": "./assets/images/categories/electronics.jpg"
+    },
+    {
+        "id": "clothing",
+        "name": "Clothing",
+        "handle": "clothing",
+        "image": "./assets/images/categories/clothing.jfif"
+    },
+    {
+        "id": "footwear",
+        "name": "Footwear",
+        "handle": "footwear",
+        "image": "./assets/images/categories/footwear.jfif"
+    },
+    {
+        "id": "beauty",
+        "name": "Beauty",
+        "handle": "beauty",
+        "image": "./assets/images/categories/beauty.jpg"
+    },
+    {
+        "id": "home-&-living",
+        "name": "Home & Living",
+        "handle": "home-&-living",
+        "image": "./assets/images/categories/home.webp"
+    },
+    {
+        "id": "sports",
+        "name": "Sports",
+        "handle": "sports",
+        "image": "./assets/images/categories/sports.jfif"
+    },
+    {
+        "id": "accessories",
+        "name": "Accessories",
+        "handle": "accessories",
+        "image": "./assets/images/categories/accessories.jfif"
+    }
+]

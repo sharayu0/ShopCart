@@ -1,0 +1,289 @@
+
+[
+    {
+        "id": "product-1",
+        "title": "Smart Watch Series 5",
+        "handle": "smart-watch-series-5",
+        "description": "Track your daily activity, steps, workouts, heart rate, notifications, and more with a stylish smartwatch designed for everyday use.",
+        "thumbnail": "./assets/images/products/fitness-tracker.jpg",
+        "categories": [
+            {
+                "name": "Electronics",
+                "handle": "electronics"
+            }
+        ],
+        "options": [
+            {
+                "id": "option-watch-color",
+                "title": "Color",
+                "values": [
+                    { "value": "Black" },
+                    { "value": "White" }
+                ]
+            }
+        ],
+        "variants": [
+            {
+                "id": "watch-black",
+                "title": "Black",
+                "options": [{ "value": "Black" }],
+                "price": 2499 
+            },
+            {
+                "id": "watch-white",
+                "title": "White",
+                "options": [{ "value": "White" }],
+                "price": 2499 
+            }
+        ]
+    },
+    {
+        "id": "product-2",
+        "title": "Portable Bluetooth Speaker",
+        "handle": "portable-bluetooth-speaker",
+        "description": "Compact wireless speaker with powerful sound, Bluetooth connectivity, and a portable design for music at home, outdoors, or while travelling.",
+        "thumbnail": " ./assets/images/products/speaker.jfif",
+        "categories": [
+            {
+                "name": "Electronics",
+                "handle": "electronics"
+            }
+        ],
+        "options": [
+            {
+                "id": "option-speaker-color",
+                "title": "Color",
+                "values": [
+                    { "value": "Black" },
+                    { "value": "Blue" },
+                    { "value": "Red" }
+                ]
+            }
+        ],
+        "variants": [
+            {
+                "id": "speaker-black",
+                "title": "Black",
+                "options": [{ "value": "Black" }],
+                "price":  1299 
+            },
+            {
+                "id": "speaker-blue",
+                "title": "Blue",
+                "options": [{ "value": "Blue" }],
+                "price":  1299 
+            },
+            {
+                "id": "speaker-red",
+                "title": "Red",
+                "options": [{ "value": "Red" }],
+                "price":  1299 
+            }
+        ]
+    },
+    {
+        "id": "product-3",
+        "title": "Women's Casual Kurti",
+        "handle": "womens-casual-kurti",
+        "description": "An elegant and comfortable daily-wear tunic featuring a solid black color and a simple straight or A-line cut.",
+        "thumbnail": " ./assets/images/products/kurti.jfif",
+        "categories": [
+            {
+                "name": "Clothing",
+                "handle": "clothing"
+            }
+        ],
+        "options": [
+            {
+                "id": "option-kurti-size",
+                "title": "Size",
+                "values": [
+                    { "value": "S" },
+                    { "value": "M" },
+                    { "value": "L" },
+                    { "value": "XL" }
+                ]
+            }
+        ],
+        "variants": [
+            {
+                "id": "kurti-s",
+                "title": "S",
+                "options": [{ "value": "S" }],
+                "price":  1099 
+            },
+            {
+                "id": "kurti-m",
+                "title": "M",
+                "options": [{ "value": "M" }],
+                "price":  1099 
+            },
+            {
+                "id": "kurti-l",
+                "title": "L",
+                "options": [{ "value": "L" }],
+                "price":  1099 
+            },
+            {
+                "id": "kurti-xl",
+                "title": "XL",
+                "options": [{ "value": "XL" }],
+                "price":  1099 
+            }
+        ]
+    },
+    {
+        "id": "product-4",
+        "title": "Casual Sneakers",
+        "handle": "casual-sneakers",
+        "description": "Everyday footwear designed for maximum comfort, soft flexible soles, and versatile style.",
+        "thumbnail": " ./assets/images/products/sneakers.jfif",
+        "categories": [
+            {
+                "name": "Footwear",
+                "handle": "footwear"
+            }
+        ],
+        "options": [
+            {
+                "id": "option-sneaker-size",
+                "title": "Size",
+                "values": [
+                    { "value": "6" },
+                    { "value": "7" },
+                    { "value": "8" },
+                    { "value": "9" },
+                    { "value": "10" }
+                ]
+            }
+        ],
+        "variants": [
+            {
+                "id": "sneakers-6",
+                "title": "6",
+                "options": [{ "value": "6" }],
+                "price":  1599 
+            },
+            {
+                "id": "sneakers-7",
+                "title": "7",
+                "options": [{ "value": "7" }],
+                "price":  1599 
+            },
+            {
+                "id": "sneakers-8",
+                "title": "8",
+                "options": [{ "value": "8" }],
+                "price":  1599 
+            },
+            {
+                "id": "sneakers-9",
+                "title": "9",
+                "options": [{ "value": "9" }],
+                "price":  1599 
+            },
+            {
+                "id": "sneakers-10",
+                "title": "10",
+                "options": [{ "value": "10" }],
+                "price":  1599 
+            }
+        ]
+    },
+    {
+        "id": "product-5",
+        "title": "Vitamin C Face Wash",
+        "handle": "vitamin-c-face-wash",
+        "description": "Daily facial cleanser infused with vitamin C designed to wash away dirt, oil, and impurities while brightening the skin.",
+        "thumbnail": " ./assets/images/products/facewash.jfif",
+        "categories": [
+            {
+                "name": "Beauty",
+                "handle": "beauty"
+            }
+        ],
+        "options": [],
+        "variants": [
+            {
+                "id": "facewash-default",
+                "title": "Default",
+                "options": [],
+                "price":  499
+            }
+        ]
+    },
+    {
+        "id": "product-6",
+        "title": "Decorative Table Lamp",
+        "handle": "decorative-table-lamp",
+        "description": "A decorative table lamp that enhances room ambiance and serves as a stylish focal point even when switched off.",
+        "thumbnail": " ./assets/images/products/tablelamp.jfif",
+        "categories": [
+            {
+                "name": "Home & Living",
+                "handle": "home-&-living"
+            }
+        ],
+        "options": [
+            {
+                "id": "option-lamp-color",
+                "title": "Color",
+                "values": [
+                    { "value": "White" },
+                    { "value": "Golden" }
+                ]
+            }
+        ],
+        "variants": [
+            {
+                "id": "lamp-white",
+                "title": "White",
+                "options": [{ "value": "White" }],
+                "price": 2000 
+            },
+            {
+                "id": "lamp-golden",
+                "title": "Golden",
+                "options": [{ "value": "Golden" }],
+                "price":  2000 
+            }
+        ]
+    },
+    {
+        "id": "product-7",
+        "title": "Adjustable Dumbbells",
+        "handle": "adjustable-dumbbells",
+        "description": "Space-saving strength training weights that let you change the load on a single handle using a dial, pin, lever, or spin-lock mechanism.",
+        "thumbnail": " ./assets/images/products/dumbells.jfif",
+        "categories": [
+            {
+                "name": "Sports",
+                "handle": "sports"
+            }
+        ],
+        "options": [
+            {
+                "id": "option-dumbbell-weight",
+                "title": "Weight",
+                "values": [
+                    { "value": "10 kg" },
+                    { "value": "20 kg" }
+                ]
+            }
+        ],
+        "variants": [
+            {
+                "id": "dumbbells-10kg",
+                "title": "10 kg",
+                "options": [{ "value": "10 kg" }],
+                "price": 1999 
+            },
+            {
+                "id": "dumbbells-20kg",
+                "title": "20 kg",
+                "options": [{ "value": "20 kg" }],
+                "price": 1999 
+            }
+        ]
+    }
+]

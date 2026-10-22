@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | ShopCart</title>
+
+    <meta name="description" content="Login to your ShopCart account.">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="login-page">
+
+        <section class="login-container">
+
+            <div class="login-card">
+
+                <div class="login-header">
+                    <h1>Welcome Back</h1>
+                    <p>
+                        Login to your ShopCart account
+                    </p>
+                </div>
+
+                <form id="login-form" novalidate>
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-wrapper">
+                            <i class="fa-regular fa-envelope"></i>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="email">
+                        </div>
+
+                        <small class="form-error" id="email-error"></small>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password">
+
+                            <button type="button" class="password-toggle" id="password-toggle" aria-label="Show password">
+                                <i class="fa-regular fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                        <small class="form-error" id="password-error"></small>
+                    </div>
+
+                    <div class="login-options">
+
+                        <label class="remember-me">
+                            <input type="checkbox" id="remember-me">
+                            <span>Remember me</span>
+                        </label>
+
+                        <a href="#" class="forgot-password">
+                            Forgot Password?
+                        </a>
+
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                    <p class="login-message" id="login-message"></p>
+                </form>
+
+                <div class="login-divider">
+                    <span>OR</span>
+                </div>
+
+                <div class="social-login">
+                    <button type="button" class="social-btn">
+                        <i class="fa-brands fa-google"></i>
+                        Continue with Google
+                    </button>
+                </div>
+
+                <p class="signup-text">
+                    Don't have an account?
+                    <a href=#>
+                        Create Account
+                    </a>
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="footer"></div>
+
+    <script type="module" src="js/components/header.js"></script>
+    <script type="module" src="js/pages/login.js"></script>
+    <script src="js/components/footer.js"></script>
+
+</body>
+
+</html>

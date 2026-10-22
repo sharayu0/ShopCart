@@ -1,0 +1,31 @@
+.slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.slide {
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.prev,
+.next {
+    position: absolute;
+    color: #fff;
+    font-size: 35px;
+    background: none;
+    border: none;
+    padding: 0 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
