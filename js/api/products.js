@@ -1,5 +1,5 @@
 import products from "../../data/products.json" with { type: "json" };
-// console.log(products)
+
 export async function getProducts(categoryHandle = "") {
     
     if (!categoryHandle) {
