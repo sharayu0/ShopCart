@@ -285,5 +285,694 @@
                 "price": 1999 
             }
         ]
+    },
+    {
+    "id": "product-8",
+    "title": "Wireless Earbuds",
+    "handle": "wireless-earbuds",
+    "description": "Compact wireless earbuds with active noise cancellation (ANC), clear sound, a comfortable fit, and a portable charging case.",
+    "thumbnail": "./assets/images/products/earbuds.jpg",
+    "categories": [
+        { "name": "Electronics", "handle": "electronics" }
+    ],
+    "options": [
+        {
+        "id": "option-earbuds-color",
+        "title": "Color",
+        "values": [
+                { "value": "Black" },
+                { "value": "White" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "earbuds-black",
+            "title": "Black",
+            "options": [{ "value": "Black" }],
+            "price": 1499
+            },
+            {
+            "id": "earbuds-white",
+            "title": "White",
+            "options": [{ "value": "White" }],
+            "price": 1499
+            }
+        ]
+    },
+    {
+    "id": "product-9",
+    "title": "Mechanical Gaming Keyboard",
+    "handle": "mechanical-gaming-keyboard",
+    "description": "A responsive mechanical keyboard with comfortable keys for gaming, typing, and everyday productivity.",
+    "thumbnail": "./assets/images/products/keyboard.jpg",
+    "categories": [
+        { "name": "Electronics", "handle": "electronics" }
+    ],
+    "options": [
+        {
+        "id": "option-keyboard-color",
+        "title": "Color",
+        "values": [
+                { "value": "Black" },
+                { "value": "White" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "keyboard-black",
+            "title": "Black",
+            "options": [{ "value": "Black" }],
+            "price": 2299
+            },
+            {
+            "id": "keyboard-white",
+            "title": "White",
+            "options": [{ "value": "White" }],
+            "price": 2299
+            }
+        ]
+    },
+    {
+    "id": "product-10",
+    "title": "Portable Power Bank",
+    "handle": "portable-power-bank",
+    "description": "A compact portable power bank designed to recharge compatible devices while travelling or commuting.",
+    "thumbnail": "./assets/images/products/power-bank.jpg",
+    "categories": [
+        { "name": "Electronics", "handle": "electronics" }
+    ],
+    "options": [
+        {
+        "id": "option-powerbank-capacity",
+        "title": "Capacity",
+        "values": [
+                { "value": "10000 mAh" },
+                { "value": "20000 mAh" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "powerbank-10000",
+            "title": "10000 mAh",
+            "options": [{ "value": "10000 mAh" }],
+            "price": 999
+            },
+            {
+            "id": "powerbank-20000",
+            "title": "20000 mAh",
+            "options": [{ "value": "20000 mAh" }],
+            "price": 1599
+            }
+        ]
+    },
+    {
+    "id": "product-11",
+    "title": "Floral Printed Kurti",
+    "handle": "floral-printed-kurti",
+    "description": "A lightweight floral printed kurti suitable for casual outings and everyday wear.",
+    "thumbnail": " ./assets/images/products/printed-kurti.jpg",
+    "categories": [
+        { "name": "Clothing", "handle": "clothing" }
+    ],
+    "options": [
+        {
+        "id": "option-floral-kurti-size",
+        "title": "Size",
+        "values": [
+                { "value": "S" },
+                { "value": "M" },
+                { "value": "L" },
+                { "value": "XL" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "floral-kurti-s",
+            "title": "S",
+            "options": [{ "value": "S" }],
+            "price": 899
+            },
+            {
+            "id": "floral-kurti-m",
+            "title": "M",
+            "options": [{ "value": "M" }],
+            "price": 899
+            },
+            {
+            "id": "floral-kurti-l",
+            "title": "L",
+            "options": [{ "value": "L" }],
+            "price": 899
+            },
+            {
+            "id": "floral-kurti-xl",
+            "title": "XL",
+            "options": [{ "value": "XL" }],
+            "price": 899
+            }
+        ]
+    },
+    {
+    "id": "product-12",
+    "title": "Men's Casual Cotton T-Shirt",
+    "handle": "mens-casual-cotton-tshirt",
+    "description": "A soft cotton casual T-shirt designed for comfortable everyday wear.",
+    "thumbnail": "./assets/images/products/cotton-tshirt.jpg",
+    "categories": [
+        { "name": "Clothing", "handle": "clothing" }
+    ],
+    "options": [
+            {
+            "id": "option-tshirt-size",
+            "title": "Size",
+            "values": [
+                { "value": "S" },
+                { "value": "M" },
+                { "value": "L" },
+                { "value": "XL" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "tshirt-s",
+            "title": "S",
+            "options": [{ "value": "S" }],
+            "price": 499
+            },
+            {
+            "id": "tshirt-m",
+            "title": "M",
+            "options": [{ "value": "M" }],
+            "price": 499
+            },
+            {
+            "id": "tshirt-l",
+            "title": "L",
+            "options": [{ "value": "L" }],
+            "price": 499
+            },
+            {
+            "id": "tshirt-xl",
+            "title": "XL",
+            "options": [{ "value": "XL" }],
+            "price": 499
+            }
+        ]
+    },
+    {
+    "id": "product-13",
+    "title": "Women's Denim Jeans",
+    "handle": "womens-denim-jeans",
+    "description": "Versatile denim jeans designed for casual styling and everyday comfort.",
+    "thumbnail": "./assets/images/products/denim-jeans.jpg",
+    "categories": [
+        { "name": "Clothing", "handle": "clothing" }
+    ],
+    "options": [
+            {
+            "id": "option-jeans-size",
+            "title": "Size",
+            "values": [
+                { "value": "28" },
+                { "value": "30" },
+                { "value": "32" },
+                { "value": "34" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "jeans-28",
+            "title": "28",
+            "options": [{ "value": "28" }],
+            "price": 1299
+            },
+            {
+            "id": "jeans-30",
+            "title": "30",
+            "options": [{ "value": "30" }],
+            "price": 1299
+            },
+            {
+            "id": "jeans-32",
+            "title": "32",
+            "options": [{ "value": "32" }],
+            "price": 1299
+            },
+            {
+            "id": "jeans-34",
+            "title": "34",
+            "options": [{ "value": "34" }],
+            "price": 1299
+            }
+        ]
+    },
+    {
+    "id": "product-14",
+    "title": "Running Shoes",
+    "handle": "running-shoes",
+    "description": "Lightweight running shoes with cushioned soles for walking, jogging, and daily activities.",
+    "thumbnail": "./assets/images/products/running-shoes.jpg",
+    "categories": [
+        { "name": "Footwear", "handle": "footwear" }
+    ],
+    "options": [
+            {
+            "id": "option-running-shoes-size",
+            "title": "Size",
+            "values": [
+                { "value": "6" },
+                { "value": "7" },
+                { "value": "8" },
+                { "value": "9" },
+                { "value": "10" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "running-shoes-6",
+            "title": "6",
+            "options": [{ "value": "6" }],
+            "price": 1799
+            },
+            {
+            "id": "running-shoes-7",
+            "title": "7",
+            "options": [{ "value": "7" }],
+            "price": 1799
+            },
+            {
+            "id": "running-shoes-8",
+            "title": "8",
+            "options": [{ "value": "8" }],
+            "price": 1799
+            },
+            {
+            "id": "running-shoes-9",
+            "title": "9",
+            "options": [{ "value": "9" }],
+            "price": 1799
+            },
+            {
+            "id": "running-shoes-10",
+            "title": "10",
+            "options": [{ "value": "10" }],
+            "price": 1799
+            }
+        ]
+    },
+    {
+    "id": "product-15",
+    "title": "Women's Flat Sandals",
+    "handle": "womens-flat-sandals",
+    "description": "Comfortable flat sandals with a versatile design for everyday wear.",
+    "thumbnail": "./assets/images/products/flat-sandals.jpg",
+    "categories": [
+        { "name": "Footwear", "handle": "footwear" }
+    ],
+    "options": [
+        {
+        "id": "option-sandals-size",
+        "title": "Size",
+        "values": [
+                { "value": "5" },
+                { "value": "6" },
+                { "value": "7" },
+                { "value": "8" },
+                { "value": "9" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "sandals-5",
+            "title": "5",
+            "options": [{ "value": "5" }],
+            "price": 699
+            },
+            {
+            "id": "sandals-6",
+            "title": "6",
+            "options": [{ "value": "6" }],
+            "price": 699
+            },
+            {
+            "id": "sandals-7",
+            "title": "7",
+            "options": [{ "value": "7" }],
+            "price": 699
+            },
+            {
+            "id": "sandals-8",
+            "title": "8",
+            "options": [{ "value": "8" }],
+            "price": 699
+            },
+            {
+            "id": "sandals-9",
+            "title": "9",
+            "options": [{ "value": "9" }],
+            "price": 699
+            }
+        ]
+    },
+    {
+    "id": "product-16",
+    "title": "Neutrogena Face Moisturizer ",
+    "handle": "hydrating-face-moisturizer",
+    "description": "A lightweight daily face moisturizer designed to leave skin feeling soft and hydrated.",
+    "thumbnail": "./assets/images/products/face-moisturizer.jpg",
+    "categories": [
+        { "name": "Beauty", "handle": "beauty" }
+    ],
+    "options": [],
+    "variants": [
+            {
+            "id": "moisturizer-default",
+            "title": "Default",
+            "options": [],
+            "price": 349
+            }
+        ]
+    },
+    {
+    "id": "product-17",
+    "title": "Nivea Aloevera Body Lotion",
+    "handle": "aloe-vera-body-lotion",
+    "description": "A daily body lotion with an aloe vera-inspired formula for smooth-feeling skin.",
+    "thumbnail": "./assets/images/products/body-lotion.jpg",
+    "categories": [
+        { "name": "Beauty", "handle": "beauty" }
+    ],
+    "options": [],
+    "variants": [
+            {
+            "id": "body-lotion-default",
+            "title": "Default",
+            "options": [],
+            "price": 299
+            }
+        ]
+    },
+    {
+    "id": "product-18",
+    "title": "Matte Lipstick",
+    "handle": "matte-lipstick",
+    "description": "A smooth matte-finish lipstick suitable for everyday makeup and special occasions.",
+    "thumbnail": "./assets/images/products/matte-lipstick.jpg",
+    "categories": [
+        { "name": "Beauty", "handle": "beauty" }
+    ],
+    "options": [
+            {
+            "id": "option-lipstick-shade",
+            "title": "Shade",
+            "values": [
+                { "value": "Rose" },
+                { "value": "Berry" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "lipstick-rose",
+            "title": "Rose",
+            "options": [{ "value": "Rose" }],
+            "price": 399
+            },
+            {
+            "id": "lipstick-berry",
+            "title": "Berry",
+            "options": [{ "value": "Berry" }],
+            "price": 399
+            }
+        ]
+    },
+    {
+    "id": "product-19",
+    "title": "Decorative Wall Clock",
+    "handle": "decorative-wall-clock",
+    "description": "A modern decorative wall clock that adds a practical and stylish accent to your living space.",
+    "thumbnail": "./assets/images/products/wall-clock.jpg",
+    "categories": [
+        { "name": "Home & Living", "handle": "home-&-living" }
+    ],
+    "options": [],
+    "variants": [
+            {
+            "id": "wall-clock-default",
+            "title": "Default",
+            "options": [],
+            "price": 899
+            }
+        ]
+    },
+    {
+    "id": "product-20",
+    "title": "Cotton Cushion Covers",
+    "handle": "cotton-cushion-covers",
+    "description": "Decorative cotton cushion covers designed to refresh sofas, chairs, and bedroom spaces.",
+    "thumbnail": "./assets/images/products/cushion-covers.jpg",
+    "categories": [
+        { "name": "Home & Living", "handle": "home-&-living" }
+    ],
+    "options": [
+            {
+            "id": "option-cushion-color",
+            "title": "Color",
+            "values": [
+                { "value": "Beige" },
+                { "value": "Blue" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "cushion-beige",
+            "title": "Beige",
+            "options": [{ "value": "Beige" }],
+            "price": 599
+            },
+            {
+            "id": "cushion-blue",
+            "title": "Blue",
+            "options": [{ "value": "Blue" }],
+            "price": 599
+            }
+        ]
+    },
+    {
+    "id": "product-21",
+    "title": "Ceramic Flower Vase",
+    "handle": "ceramic-flower-vase",
+    "description": "A ceramic decorative vase for displaying flowers or styling shelves, tables, and entryways.",
+    "thumbnail": "./assets/images/products/ceramic-vase.jpg",
+    "categories": [
+        { "name": "Home & Living", "handle": "home-&-living" }
+    ],
+    "options": [
+            {
+            "id": "option-vase-color",
+            "title": "Color",
+            "values": [
+                { "value": "White" },
+                { "value": "Terracotta" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "vase-white",
+            "title": "White",
+            "options": [{ "value": "White" }],
+            "price": 499
+            },
+            {
+            "id": "vase-terracotta",
+            "title": "Terracotta",
+            "options": [{ "value": "Terracotta" }],
+            "price": 499
+            }
+        ]
+    },
+    {
+    "id": "product-22",
+    "title": "Yoga Mat",
+    "handle": "yoga-mat",
+    "description": "A cushioned exercise mat for yoga, stretching, and home workouts.",
+    "thumbnail": "./assets/images/products/yoga-mat.jpg",
+    "categories": [
+        { "name": "Sports", "handle": "sports" }
+    ],
+    "options": [
+            {
+            "id": "option-yoga-mat-color",
+            "title": "Color",
+            "values": [
+                { "value": "Purple" },
+                { "value": "Blue" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "yoga-mat-purple",
+            "title": "Purple",
+            "options": [{ "value": "Purple" }],
+            "price": 799
+            },
+            {
+            "id": "yoga-mat-blue",
+            "title": "Blue",
+            "options": [{ "value": "Blue" }],
+            "price": 799
+            }
+        ]
+    },
+    {
+    "id": "product-23",
+    "title": "Resistance Bands Set",
+    "handle": "resistance-bands-set",
+    "description": "A set of resistance bands for strength training, mobility exercises, and home fitness routines.",
+    "thumbnail": "./assets/images/products/resistance-bands.jpg",
+    "categories": [
+        { "name": "Sports", "handle": "sports" }
+    ],
+    "options": [],
+    "variants": [
+            {
+            "id": "resistance-bands-default",
+            "title": "Default",
+            "options": [],
+            "price": 499
+            }
+        ]
+    },
+    {
+    "id": "product-24",
+    "title": "Skipping Rope",
+    "handle": "skipping-rope",
+    "description": "A lightweight skipping rope suitable for cardio workouts and everyday fitness training.",
+    "thumbnail": "./assets/images/products/skipping-rope.jpg",
+    "categories": [
+        { "name": "Sports", "handle": "sports" }
+    ],
+    "options": [],
+    "variants": [
+            {
+            "id": "skipping-rope-default",
+            "title": "Default",
+            "options": [],
+            "price": 299
+            }
+        ]
+    },
+    {
+    "id": "product-25",
+    "title": "Leather Wallet",
+    "handle": "leather-wallet",
+    "description": "A compact everyday wallet designed to organize cash and cards.",
+    "thumbnail": "./assets/images/products/leather-wallet.jpg",
+    "categories": [
+        { "name": "Accessories", "handle": "accessories" }
+    ],
+    "options": [
+        {
+        "id": "option-wallet-color",
+        "title": "Color",
+            "values": [
+                { "value": "Black" },
+                { "value": "Brown" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "wallet-black",
+            "title": "Black",
+            "options": [{ "value": "Black" }],
+            "price": 599
+            },
+            {
+            "id": "wallet-brown",
+            "title": "Brown",
+            "options": [{ "value": "Brown" }],
+            "price": 599
+            }
+        ]
+    },
+    {
+    "id": "product-26",
+    "title": "Polarized Sunglasses",
+    "handle": "polarized-sunglasses",
+    "description": "Classic-style sunglasses for everyday outdoor wear and sunny days.",
+    "thumbnail": "./assets/images/products/sunglasses.jpg",
+    "categories": [
+        { "name": "Accessories", "handle": "accessories" }
+    ],
+    "options": [
+        {
+        "id": "option-sunglasses-color",
+        "title": "Frame Color",
+            "values": [
+                { "value": "Black" },
+                { "value": "Brown" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "sunglasses-black",
+            "title": "Black",
+            "options": [{ "value": "Black" }],
+            "price": 799
+            },
+            {
+            "id": "sunglasses-brown",
+            "title": "Brown",
+            "options": [{ "value": "Brown" }],
+            "price": 799
+            }
+        ]
+    },
+    {
+    "id": "product-27",
+    "title": "Canvas Tote Bag",
+    "handle": "canvas-tote-bag",
+    "description": "A reusable canvas tote bag for carrying everyday essentials, books, and shopping items.",
+    "thumbnail": "./assets/images/products/tote-bag.jpg",
+    "categories": [
+        { "name": "Accessories", "handle": "accessories" }
+    ],
+    "options": [
+        {
+        "id": "option-tote-color",
+        "title": "Color",
+        "values": [
+                { "value": "Natural" },
+                { "value": "Black" }
+            ]
+        }
+    ],
+    "variants": [
+            {
+            "id": "tote-natural",
+            "title": "Natural",
+            "options": [{ "value": "Natural" }],
+            "price": 399
+            },
+            {
+            "id": "tote-black",
+            "title": "Black",
+            "options": [{ "value": "Black" }],
+            "price": 399
+            }
+        ]
     }
 ]

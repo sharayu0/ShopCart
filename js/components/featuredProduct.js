@@ -43,7 +43,7 @@ export function renderFeaturedProducts(products) {
 
     const track = featuredContainer.querySelector(".product-track");
 
-    products.forEach(product =>{
+    products.slice(0,8).forEach(product =>{
         const card = createProductCard(product);
 
         track.appendChild(card);

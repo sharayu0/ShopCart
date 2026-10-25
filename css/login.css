@@ -29,7 +29,7 @@
     color: #666;
 }
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .form-group label {
     display: block;
@@ -174,5 +174,12 @@
 
     .login-page {
         padding: 30px 15px;
+    }
+    .input-wrapper input {
+        padding: 10px 45px;
+        font-size: 13px;
+    }
+    .form-group {
+        margin-bottom: unset;
     }
 }

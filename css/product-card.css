@@ -2,6 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    height: 100%;
     background: #ffffff;
     border: 1px solid #e5e7eb;
     border-radius: 12px;
@@ -31,6 +32,9 @@
     transform: scale(1.1);
 }
 .product-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     padding: 16px;
 }
 .product-title {
@@ -69,6 +73,7 @@
     gap: 12px;
     margin-top: auto;
 }
+
 .product-price {
     font-size: 16px;
     font-weight: 700;
@@ -80,7 +85,10 @@
     justify-content: center;
     gap: 8px;
     width: 100%;
+    box-sizing: border-box;
     padding: 11px 15px;
+    position: static;
+    margin: 0;
     border: none;
     border-radius: 7px;
     background: #2563eb;
@@ -88,8 +96,7 @@
     font-size: 14px;
     font-weight: 600;
     cursor: pointer;
-    transition: background 0.2s ease,
-                transform 0.2s ease;
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 .add-cart-btn:hover {
     background: #1d4ed8;
@@ -124,7 +131,7 @@
         padding: 12px;
     }
     .product-image-link {
-        height: 180px;
+        height: 160px;
     }
     .product-title {
         font-size: 15px;
