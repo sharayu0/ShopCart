@@ -146,5 +146,7 @@ Sharayu Rajput
 Frontend Developer
 
 GitHub: https://github.com/sharayu0/
+
 LinkedIn: https://www.linkedin.com/in/sharayu-rajput-266687137
-Portfolio: 
+
+Portfolio: https://shopcart-web-app.netlify.app/
